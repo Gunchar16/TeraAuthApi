@@ -6,6 +6,9 @@ public interface IUserRepository
 {
     Task<User> GetByIdWithRoleAsync(Guid id,
         CancellationToken cancellationToken = default);
+
+    Task<User> GetByIdWithRoleWithTrackingAsync(Guid id,
+        CancellationToken cancellationToken = default);
     Task<User> GetByIdAsync(Guid id,
         CancellationToken cancellationToken = default);
     Task<User> GetByUsernameAsync(string username, 

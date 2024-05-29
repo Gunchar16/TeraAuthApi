@@ -9,6 +9,7 @@ public class UnitOfWork : IUnitOfWork
 {
     private readonly TeraDbContext _context;
     private IUserRepository _userRepository;
+    private IRoleRepository _roleRepository;
     private IRefreshTokenRepository _refreshTokenRepository;
 
     public UnitOfWork(TeraDbContext context)
@@ -23,6 +24,15 @@ public class UnitOfWork : IUnitOfWork
             if (_userRepository is null)
                 _userRepository = new UserRepository(_context);
             return _userRepository;
+        }
+    }
+    public IRoleRepository RoleRepository
+    {
+        get
+        {
+            if (_roleRepository is null)
+                _roleRepository = new RoleRepository(_context);
+            return _roleRepository;
         }
     }
     

@@ -14,6 +14,12 @@ public class UserRepository(TeraDbContext context) : IUserRepository
             .ThenInclude(ur => ur.Role)
             .AsNoTracking()
             .SingleOrDefaultAsync(u => u.Id == id, cancellationToken: cancellationToken);
+    public Task<User> GetByIdWithRoleWithTrackingAsync(Guid id, 
+        CancellationToken cancellationToken = default)
+        => context.Users
+            .Include(u => u.UserRoles)
+            .ThenInclude(ur => ur.Role)
+            .SingleOrDefaultAsync(u => u.Id == id, cancellationToken: cancellationToken);
     
     public Task<User> GetByIdAsync(Guid id, 
         CancellationToken cancellationToken = default)

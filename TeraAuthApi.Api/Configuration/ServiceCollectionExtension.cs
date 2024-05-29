@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using TeraAuthApi.Application.Common;
 using TeraAuthApi.Application.Repository.Interfaces;
+using TeraAuthApi.Application.Service;
 using TeraAuthApi.Application.Service.Implementations;
 using TeraAuthApi.Application.Service.Interfaces;
 using TeraAuthApi.Application.Settings;
@@ -24,10 +25,12 @@ internal static class ServiceCollectionExtension
         services.AddScoped<IAdminService, AdminService>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IEmailService, EmailService>();
+        services.AddScoped<IRoleService, RoleService>();
         
         //Repositories
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+        services.AddScoped<IRoleRepository, RoleRepository>();
         
         //UnitOfWork
         
