@@ -12,7 +12,7 @@ using TeraAuthApi.Infrastructure.DataContext;
 namespace TeraAuthApi.Infrastructure.Migrations
 {
     [DbContext(typeof(TeraDbContext))]
-    [Migration("20240528191057_init-migration")]
+    [Migration("20240529095306_init-migration")]
     partial class initmigration
     {
         /// <inheritdoc />
@@ -81,12 +81,12 @@ namespace TeraAuthApi.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("1ab4af58-9c9c-4d5e-a0cc-3879935b7c25"),
+                            Id = new Guid("e44a2234-378a-4620-af12-36b400a2fd82"),
                             Name = "User"
                         },
                         new
                         {
-                            Id = new Guid("98bfbee7-9e6e-4c92-a153-a86d163e6eeb"),
+                            Id = new Guid("d2b94fea-5397-4b09-b6f9-49cea7e9bfdd"),
                             Name = "Admin"
                         });
                 });
@@ -127,6 +127,16 @@ namespace TeraAuthApi.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("5ad63555-2166-4b39-864b-777087b3b7af"),
+                            CreatedAt = new DateTime(2024, 5, 29, 9, 53, 6, 437, DateTimeKind.Utc).AddTicks(2907),
+                            Email = "admin@domain.com",
+                            PasswordHash = "$2a$11$e.njoG27leUQYLp2wjJgm.4CjO4aAVYIHMkoZBukQAPwu.r3wn8vG",
+                            Username = "admin"
+                        });
                 });
 
             modelBuilder.Entity("TeraAuthApi.Domain.Entities.UserRole", b =>
@@ -148,6 +158,14 @@ namespace TeraAuthApi.Infrastructure.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("1c840a61-beb9-4f21-8301-8c2855d58774"),
+                            RoleId = new Guid("d2b94fea-5397-4b09-b6f9-49cea7e9bfdd"),
+                            UserId = new Guid("5ad63555-2166-4b39-864b-777087b3b7af")
+                        });
                 });
 
             modelBuilder.Entity("TeraAuthApi.Domain.Entities.RefreshToken", b =>

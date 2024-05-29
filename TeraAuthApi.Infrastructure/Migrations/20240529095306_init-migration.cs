@@ -94,9 +94,19 @@ namespace TeraAuthApi.Infrastructure.Migrations
                 columns: new[] { "Id", "Name" },
                 values: new object[,]
                 {
-                    { new Guid("1ab4af58-9c9c-4d5e-a0cc-3879935b7c25"), "User" },
-                    { new Guid("98bfbee7-9e6e-4c92-a153-a86d163e6eeb"), "Admin" }
+                    { new Guid("d2b94fea-5397-4b09-b6f9-49cea7e9bfdd"), "Admin" },
+                    { new Guid("e44a2234-378a-4620-af12-36b400a2fd82"), "User" }
                 });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "CreatedAt", "Email", "PasswordHash", "UpdatedAt", "Username" },
+                values: new object[] { new Guid("5ad63555-2166-4b39-864b-777087b3b7af"), new DateTime(2024, 5, 29, 9, 53, 6, 437, DateTimeKind.Utc).AddTicks(2907), "admin@domain.com", "$2a$11$e.njoG27leUQYLp2wjJgm.4CjO4aAVYIHMkoZBukQAPwu.r3wn8vG", null, "admin" });
+
+            migrationBuilder.InsertData(
+                table: "UserRoles",
+                columns: new[] { "Id", "RoleId", "UserId" },
+                values: new object[] { new Guid("1c840a61-beb9-4f21-8301-8c2855d58774"), new Guid("d2b94fea-5397-4b09-b6f9-49cea7e9bfdd"), new Guid("5ad63555-2166-4b39-864b-777087b3b7af") });
 
             migrationBuilder.CreateIndex(
                 name: "IX_RefreshTokens_UserId",
