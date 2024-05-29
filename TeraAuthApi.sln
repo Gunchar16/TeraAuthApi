@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraAuthApi.Api", "TeraAuthApi.Api\TeraAuthApi.Api.csproj", "{85680551-C5FB-40CF-816A-06F296CD3DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraAuthApi.Application", "TeraAuthApi.Application\TeraAuthApi.Application.csproj", "{4DCC55E8-1F4A-44FC-A1BD-2FC4ECE989F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraAuthApi.Infrastructure", "TeraAuthApi.Infrastructure\TeraAuthApi.Infrastructure.csproj", "{B04C2D1E-DBAA-4426-A4FC-77D384334164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraAuthApi.Domain", "TeraAuthApi.Domain\TeraAuthApi.Domain.csproj", "{734F569C-6D2B-4469-85C9-0CBEB13CA359}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{C6B5ACD9-3274-4F11-90B9-266CF3B26865}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7804933B-DBF9-4616-B769-B76BA7BD7CF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{903BA64C-931D-4B67-88D3-10EE148E8D60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{90D284EE-7581-4E1A-AC0E-8905198B9686}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85680551-C5FB-40CF-816A-06F296CD3DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85680551-C5FB-40CF-816A-06F296CD3DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85680551-C5FB-40CF-816A-06F296CD3DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85680551-C5FB-40CF-816A-06F296CD3DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCC55E8-1F4A-44FC-A1BD-2FC4ECE989F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCC55E8-1F4A-44FC-A1BD-2FC4ECE989F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCC55E8-1F4A-44FC-A1BD-2FC4ECE989F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCC55E8-1F4A-44FC-A1BD-2FC4ECE989F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04C2D1E-DBAA-4426-A4FC-77D384334164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04C2D1E-DBAA-4426-A4FC-77D384334164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04C2D1E-DBAA-4426-A4FC-77D384334164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04C2D1E-DBAA-4426-A4FC-77D384334164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734F569C-6D2B-4469-85C9-0CBEB13CA359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734F569C-6D2B-4469-85C9-0CBEB13CA359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734F569C-6D2B-4469-85C9-0CBEB13CA359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734F569C-6D2B-4469-85C9-0CBEB13CA359}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85680551-C5FB-40CF-816A-06F296CD3DE4} = {C6B5ACD9-3274-4F11-90B9-266CF3B26865}
+		{734F569C-6D2B-4469-85C9-0CBEB13CA359} = {7804933B-DBF9-4616-B769-B76BA7BD7CF2}
+		{4DCC55E8-1F4A-44FC-A1BD-2FC4ECE989F2} = {903BA64C-931D-4B67-88D3-10EE148E8D60}
+		{B04C2D1E-DBAA-4426-A4FC-77D384334164} = {90D284EE-7581-4E1A-AC0E-8905198B9686}
+	EndGlobalSection
+EndGlobal

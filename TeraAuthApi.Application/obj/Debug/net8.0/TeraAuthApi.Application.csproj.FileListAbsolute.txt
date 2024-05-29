@@ -1,0 +1,15 @@
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\bin\Debug\net8.0\TeraAuthApi.Application.deps.json
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\bin\Debug\net8.0\TeraAuthApi.Application.dll
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\bin\Debug\net8.0\TeraAuthApi.Application.pdb
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\bin\Debug\net8.0\TeraAuthApi.Domain.dll
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\bin\Debug\net8.0\TeraAuthApi.Domain.pdb
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\TeraAuthApi.Application.csproj.AssemblyReference.cache
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\TeraAuthApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\TeraAuthApi.Application.AssemblyInfoInputs.cache
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\TeraAuthApi.Application.AssemblyInfo.cs
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\TeraAuthApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\TeraAuthApi.Application.csproj.CopyComplete
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\TeraAuthApi.Application.dll
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\refint\TeraAuthApi.Application.dll
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\TeraAuthApi.Application.pdb
+C:\Users\iosel\RiderProjects\TeraAuthApi\TeraAuthApi.Application\obj\Debug\net8.0\ref\TeraAuthApi.Application.dll
