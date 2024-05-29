@@ -71,6 +71,8 @@ The following API endpoints are available:
 - `GET /api/admin/users/{id}`: Get a specific user's profile (Admin only).
 - `PUT /api/admin/users/{id}`: Update a specific user's profile (Admin only).
 - `DELETE /api/admin/users/{id}`: Delete a specific user (Admin only).
+- `DELETE /api/role`: Get the list of all the roles (Admin only).
+- `DELETE /api/role/assign`: Assign the role to a user (Admin only).
 
 
 # Database Configuration
@@ -89,7 +91,9 @@ To apply the database migrations and create the necessary tables, run the follow
 Update-Database
 ```
 
-This command will apply the migrations to create the required tables and seed the initial data.
+This command will apply the migrations to create the required tables and seed the initial data. 
+
+**The initial data will have admin user with these credentials: Username - admin, Password- admin**
 
 # Technologies Used
 - .NET 8, C# 12, ASP.NET Core Web API
