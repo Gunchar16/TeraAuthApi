@@ -76,12 +76,20 @@ The following API endpoints are available:
 # Database Configuration
 The application uses Entity Framework Core Code First approach for database management. The database schema is automatically created and updated based on the domain entities defined in the `TeraAuthApi.Domain` project. The database connection string is specified in the `appsettings.json` and `appsettings.Development.json` file. Make sure to update the connection string with your actual database connection details.
 
+Before running the application, ensure that the database is created. You can create the database using SQL Server Management Studio (SSMS) or any other database management tool. The database should be named `TeraAuth` or the name specified in your connection string.
+
+Example SQL script to create the database:
+
+```sql
+CREATE DATABASE TeraAuth;
+```
+
 To apply the database migrations and create the necessary tables, run the following command in the Package Manager Console:
 ```sh
 Update-Database
 ```
 
-This command will create the database (if it doesn't exist) and apply the migrations to create the required tables and seed the initial data.
+This command will apply the migrations to create the required tables and seed the initial data.
 
 # Technologies Used
 - .NET 8, C# 12, ASP.NET Core Web API
