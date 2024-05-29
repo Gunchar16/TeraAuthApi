@@ -33,7 +33,7 @@ To get started with the User Management API, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/TeraAuthApi.git
+   git clone https://github.com/gunchar16/TeraAuthApi.git
    ```
 2. Navigate to the TeraAuthApi.Api directory:
    ```sh
